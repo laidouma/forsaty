@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forsaty - Votre Opportunité d'Apprendre et de Réussir</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <!-- Conteneur autour du logo pour le mettre en valeur -->
+        <div class="logo-container">
+            <img src="https://forsatyfr.wordpress.com/wp-content/uploads/2024/11/forsaty__2_-removebg-preview-1.png" alt="Logo Forsaty" class="logo">
+        </div>
+
+        <!-- Boutons de navigation -->
+        <div class="header-buttons">
+            <a href="qui-sommes-nous.html" class="button">Qui sommes-nous ?</a>
+            <a href="contact.html" class="button">Contact</a>
+        </div>
+    </div>
+</header>
+
+<section>
+    <h2>À propos de Forsaty</h2>
+    <p>
+        **Forsaty** est plus qu'une simple plateforme. C'est un véritable tremplin pour les étudiants et les jeunes professionnels en Algérie. Nous offrons un espace unique où l'apprentissage rencontre les opportunités professionnelles. Grâce à Forsaty, vous pouvez non seulement acquérir des connaissances de qualité, mais aussi développer des compétences pratiques qui vous prépareront à réussir dans la vie active.
+    </p>
+    <p>
+        Notre mission est simple : permettre aux étudiants de surmonter les défis financiers tout en poursuivant leur éducation. Nous croyons en un avenir où les étudiants peuvent équilibrer leurs études et leur indépendance financière grâce à des services diversifiés adaptés à leurs besoins.
+    </p>
+    <p>
+        En plus de cela, **Forsaty** offre un accès privilégié à l'Espace Sahwa, une bibliothèque virtuelle enrichie de contenus académiques, de livres de référence, et de ressources pédagogiques actualisées. L'Espace Sahwa est conçu pour répondre aux attentes de chercheurs, étudiants et professionnels à la recherche de nouvelles idées et de découvertes.
+    </p>
+</section>
+
+<!-- Section des services -->
+<section>
+    <h2>Nos Services</h2>
+    <div class="services">
+        <div class="service">
+            <img src="service1.jpg" alt="Rédaction de Mémoires">
+            <h3>Rédaction de Mémoires</h3>
+            <p>Nous vous assistons dans la rédaction de mémoires académiques, en veillant à la qualité et à la rigueur nécessaire à vos travaux.</p>
+        </div>
+        <div class="service">
+            <img src="service2.jpg" alt="Correction Linguistique">
+            <h3>Correction Linguistique</h3>
+            <p>Des experts linguistiques pour vous assurer que vos écrits sont parfaits, tant sur le plan grammatical que syntaxique.</p>
+        </div>
+        <div class="service">
+            <img src="service3.jpg" alt="Cours Particuliers">
+            <h3>Cours Particuliers</h3>
+            <p>Nous offrons des cours personnalisés pour vous aider à exceller dans vos études, avec des enseignants qualifiés.</p>
+        </div>
+        <div class="service">
+            <img src="service4.jpg" alt="Services en Ligne">
+            <h3>Services en Ligne</h3>
+            <p>Nos services numériques comprennent la création de sites web, la gestion de projets en ligne, et bien plus encore pour répondre à vos besoins.</p>
+        </div>
+        <div class="service">
+            <img src="service5.jpg" alt="Formations Professionnelles">
+            <h3>Formations Professionnelles</h3>
+            <p>Des formations concrètes pour vous préparer à la vie professionnelle dans des secteurs divers et en forte demande.</p>
+        </div>
+        <div class="service">
+            <img src="service6.jpg" alt="Consultations en Orientation">
+            <h3>Consultations en Orientation</h3>
+            <p>Nous vous accompagnons dans vos choix de carrière et de parcours académique pour que vous puissiez prendre les meilleures décisions.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Section Inscription, Demande d'Emploi, Demande de Service (ensemble) -->
+<section class="three-columns">
+    <div class="section-box">
+        <h2>Inscription dans l’Espace Sahwa</h2>
+        <p>Rejoignez notre espace interactif, un lieu riche en informations et ressources dédiées à l'apprentissage et au développement personnel. Découvrez des contenus variés et des programmes spécialement conçus pour enrichir vos connaissances et vous aider à atteindre vos objectifs.</p>
+        <a href="inscription.html" class="button">S'inscrire maintenant</a>
+    </div>
+
+    <div class="section-box">
+        <h2>Demande d'Emploi</h2>
+        <p>Accédez à un large éventail d'offres d'emploi dans divers secteurs. Que vous soyez à la recherche d'un emploi à temps partiel ou à plein temps, nous avons les bonnes opportunités pour vous.</p>
+        <a href="demande-emploi.html" class="button">Envoyer une demande</a>
+    </div>
+
+    <div class="section-box">
+        <h2>Demande de Service</h2>
+        <p>De la rédaction à la formation en ligne, en passant par des services numériques, nous vous offrons une gamme complète de services professionnels. Soumettez votre demande et bénéficiez de notre expertise dans de nombreux domaines.</p>
+        <a href="demande-service.html" class="button">Faire une demande</a>
+    </div>
+</section>
+
+<footer style="background-color: #4B0F27; color: white; text-align: center; padding: 15px;">
+    <p>© 2024 Forsaty - Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
