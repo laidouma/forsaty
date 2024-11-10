@@ -1,0 +1,132 @@
+/* Style général */
+body {
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.6;
+	background-color: #f4f4f4;
+	color: #333;
+	margin: 0;
+	padding: 0;
+}
+
+/* Header */
+header {
+	background-color: #4B0F27;
+	color: white;
+	padding: 15px 0;
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 20px;
+	align-items: center;
+}
+
+.logo-container {
+	width: 130px;
+	height: 130px;
+	background-color: white;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+	max-width: 100px;
+	height: auto;
+}
+
+.header-buttons {
+	display: flex;
+	gap: 15px;
+}
+
+.header-buttons .button {
+	background-color: #8B1C43;
+	color: white;
+	padding: 10px 20px;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: background-color .3s;
+}
+
+.header-buttons .button:hover {
+	background-color: #4B0F27;
+}
+
+/* Sections */
+section {
+	padding: 30px;
+	margin: 0 15px;
+}
+
+h2 {
+	color: #4B0F27;
+	margin-bottom: 20px;
+}
+
+/* Section Services */
+.services {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	gap: 20px;
+	margin-top: 30px;
+}
+
+.service img {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+}
+
+.service {
+	background-color: white;
+	padding: 20px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+}
+
+/* Section Box */
+.section-box {
+	background-color: white;
+	padding: 20px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.button {
+	background-color: #4B0F27;
+	color: white;
+	padding: 12px 25px;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: background-color .3s;
+	display: inline-block;
+}
+
+.button:hover {
+	background-color: #8B1C43;
+}
+
+/* 3 Columns for Inscription, Demande d'Emploi, Demande de Service */
+.three-columns {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+	.three-columns {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.section-box {
+		width: 100%;
+	}
+}
