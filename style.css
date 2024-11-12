@@ -245,3 +245,30 @@ footer p {
     margin: 0;
     font-size: 14px;
 }
+
+/* Styles pour la gestion du texte en arabe (direction RTL) */
+body[lang="ar"] {
+    direction: rtl;
+    text-align: right;
+}
+
+body[lang="ar"] .header-container {
+    flex-direction: row-reverse;
+}
+
+body[lang="ar"] .logo-container {
+    order: -1;  /* Placer le logo à droite */
+}
+
+body[lang="ar"] .header-buttons {
+    flex-direction: row-reverse;
+}
+
+body[lang="ar"] h2 {
+    text-align: right;
+}
+
+body[lang="ar"] .services,
+body[lang="ar"] .three-columns {
+    direction: rtl;
+}
