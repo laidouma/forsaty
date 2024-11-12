@@ -5,93 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forsaty - Votre Opportunité d'Apprendre et de Réussir</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        // Fonction pour changer la langue
-        function changeLanguage(lang) {
-            const body = document.body;
-            body.setAttribute("lang", lang);
-
-            // Mettez ici les traductions des textes en arabe ou en français.
-            const translations = {
-                fr: {
-                    accueil: "Accueil",
-                    quiSommesNous: "Qui sommes-nous ?",
-                    contact: "Contact",
-                    services: "Nos Services",
-                    inscription: "Inscription dans l’Espace Sahwa",
-                    demandeEmploi: "Demande d'Emploi",
-                    demandeService: "Demande de Service",
-                    footer: "© 2024 Forsaty - Tous droits réservés",
-                    introText: "Forsaty est plus qu'une simple plateforme. C'est un véritable tremplin pour les étudiants et les jeunes professionnels en Algérie.",
-                    espaceSahwa: "Espace Sahwa est conçu pour répondre aux attentes de chercheurs, étudiants et professionnels.",
-                    objectif: "Notre mission est simple : permettre aux étudiants de surmonter les défis financiers tout en poursuivant leur éducation."
-                },
-                ar: {
-                    accueil: "الصفحة الرئيسية",
-                    quiSommesNous: "من نحن؟",
-                    contact: "اتصل بنا",
-                    services: "خدماتنا",
-                    inscription: "التسجيل في مساحة صحوة",
-                    demandeEmploi: "طلب وظيفة",
-                    demandeService: "طلب خدمة",
-                    footer: "© 2024 فُصاتي - جميع الحقوق محفوظة",
-                    introText: "فرصتك في العلم والعمل سيرا نحو النجاح. يوفر موقع فرصتي فرصا امام الطلبة المهتمين من مختلف الاماكن في الجزائر لتحصيل مدخول جيد يساعد على سد متطلبات الدراسة دون التخلي عنها.",
-                    espaceSahwa: "فضاء صحوة يفتح فسحة للقراءة في كتب التراث ويقدم افكارا جديدة وموضوعات متنوعة تمكن الباحث من تقديم الجديد.",
-                    objectif: "مهمتنا بسيطة: تمكين الطلاب من التغلب على التحديات المالية أثناء مواصلة تعليمهم."
-                }
-            };
-
-            // Appliquer les traductions pour chaque élément
-            document.getElementById("accueil").innerText = translations[lang].accueil;
-            document.getElementById("qui-sommes-nous").innerText = translations[lang].quiSommesNous;
-            document.getElementById("contact").innerText = translations[lang].contact;
-            document.getElementById("services-title").innerText = translations[lang].services;
-            document.getElementById("inscription-title").innerText = translations[lang].inscription;
-            document.getElementById("demande-emploi-title").innerText = translations[lang].demandeEmploi;
-            document.getElementById("demande-service-title").innerText = translations[lang].demandeService;
-            document.getElementById("footer").innerText = translations[lang].footer;
-            document.getElementById("intro-text").innerText = translations[lang].introText;
-            document.getElementById("espace-sahwa-text").innerText = translations[lang].espaceSahwa;
-            document.getElementById("objectif-text").innerText = translations[lang].objectif;
-        }
-    </script>
 </head>
 <body>
 
 <header>
     <div class="header-container">
+        <!-- Conteneur autour du logo pour le mettre en valeur -->
         <div class="logo-container">
-            <img src="logo.png" alt="Logo Forsaty" class="logo">
+            <!-- Remplacement de l'URL par le chemin local vers ton logo -->
+            <a href="index.html">
+                <img src="logo.png" alt="Logo Forsaty" class="logo">
+            </a>
         </div>
 
+        <!-- Boutons de navigation -->
         <div class="header-buttons">
-            <!-- Boutons de navigation -->
-            <button id="accueil" class="button" onclick="window.location.href='#'">Accueil</button>
-            <button id="qui-sommes-nous" class="button" onclick="window.location.href='#'">Qui sommes-nous ?</button>
-            <button id="contact" class="button" onclick="window.location.href='#'">Contact</button>
-            
-            <!-- Boutons pour changer de langue -->
-            <button onclick="changeLanguage('fr')" class="button">Français</button>
-            <button onclick="changeLanguage('ar')" class="button">العربية</button>
+            <a href="index.html" class="button">Accueil</a> <!-- Lien ajouté pour "Accueil" -->
+            <a href="qui-sommes-nous.html" class="button">Qui sommes-nous ?</a>
+            <a href="contact.html" class="button">Contact</a>
         </div>
     </div>
 </header>
 
 <section>
-    <h2 id="accueil">À propos de Forsaty</h2>
-    <p id="intro-text">
-        Forsaty est plus qu'une simple plateforme. C'est un véritable tremplin pour les étudiants et les jeunes professionnels en Algérie. Nous offrons un espace unique où l'apprentissage rencontre les opportunités professionnelles. Grâce à Forsaty, vous pouvez non seulement acquérir des connaissances de qualité, mais aussi développer des compétences pratiques qui vous prépareront à réussir dans la vie active.
+    <h2>À propos de Forsaty</h2>
+    <p>
+        **Forsaty** est plus qu'une simple plateforme. C'est un véritable tremplin pour les étudiants et les jeunes professionnels en Algérie. Nous offrons un espace unique où l'apprentissage rencontre les opportunités professionnelles. Grâce à Forsaty, vous pouvez non seulement acquérir des connaissances de qualité, mais aussi développer des compétences pratiques qui vous prépareront à réussir dans la vie active.
     </p>
-    <p id="espace-sahwa-text">
+    <p>
         Notre mission est simple : permettre aux étudiants de surmonter les défis financiers tout en poursuivant leur éducation. Nous croyons en un avenir où les étudiants peuvent équilibrer leurs études et leur indépendance financière grâce à des services diversifiés adaptés à leurs besoins.
     </p>
-    <p id="objectif-text">
+    <p>
         En plus de cela, **Forsaty** offre un accès privilégié à l'Espace Sahwa, une bibliothèque virtuelle enrichie de contenus académiques, de livres de référence, et de ressources pédagogiques actualisées. L'Espace Sahwa est conçu pour répondre aux attentes de chercheurs, étudiants et professionnels à la recherche de nouvelles idées et de découvertes.
     </p>
 </section>
 
+<!-- Section des services -->
 <section>
-    <h2 id="services-title">Nos Services</h2>
+    <h2>Nos Services</h2>
     <div class="services">
         <div class="service">
             <img src="service1.jpg" alt="Rédaction de Mémoires">
@@ -126,28 +77,29 @@
     </div>
 </section>
 
+<!-- Section Inscription, Demande d'Emploi, Demande de Service (ensemble) -->
 <section class="three-columns">
     <div class="section-box">
-        <h2 id="inscription-title">Inscription dans l’Espace Sahwa</h2>
+        <h2>Inscription dans l’Espace Sahwa</h2>
         <p>Rejoignez notre espace interactif, un lieu riche en informations et ressources dédiées à l'apprentissage et au développement personnel. Découvrez des contenus variés et des programmes spécialement conçus pour enrichir vos connaissances et vous aider à atteindre vos objectifs.</p>
         <a href="inscription.html" class="button">S'inscrire maintenant</a>
     </div>
 
     <div class="section-box">
-        <h2 id="demande-emploi-title">Demande d'Emploi</h2>
+        <h2>Demande d'Emploi</h2>
         <p>Accédez à un large éventail d'offres d'emploi dans divers secteurs. Que vous soyez à la recherche d'un emploi à temps partiel ou à plein temps, nous avons les bonnes opportunités pour vous.</p>
         <a href="demande-emploi.html" class="button">Envoyer une demande</a>
     </div>
 
     <div class="section-box">
-        <h2 id="demande-service-title">Demande de Service</h2>
+        <h2>Demande de Service</h2>
         <p>De la rédaction à la formation en ligne, en passant par des services numériques, nous vous offrons une gamme complète de services professionnels. Soumettez votre demande et bénéficiez de notre expertise dans de nombreux domaines.</p>
         <a href="demande-service.html" class="button">Faire une demande</a>
     </div>
 </section>
 
 <footer style="background-color: #4B0F27; color: white; text-align: center; padding: 15px;">
-    <p id="footer">© 2024 Forsaty - Tous droits réservés</p>
+    <p>© 2024 Forsaty - Tous droits réservés</p>
 </footer>
 
 </body>
