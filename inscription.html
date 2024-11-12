@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscription - Espace Sahwa</title>
-    <link rel="stylesheet" href="style.css"> <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
     <div class="header-container">
+        <!-- Logo avec lien vers la page d'accueil -->
         <div class="logo-container">
-            <img src="logo.png" alt="Logo Forsaty" class="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="Logo Forsaty" class="logo">
+            </a>
         </div>
+        <!-- Boutons de navigation -->
         <div class="header-buttons">
             <a href="index.html" class="button">Accueil</a>
             <a href="contact.html" class="button">Contact</a>
@@ -23,24 +27,5 @@
 <section class="inscription-section">
     <h2>Inscription à l'Espace Sahwa</h2>
     <p>Rejoignez notre bibliothèque virtuelle pour accéder à des ressources académiques de qualité.</p>
-    
     <form action="mailto:votre-email@domaine.com" method="post" enctype="text/plain">
         <label for="nom">Nom :</label>
-        <input type="text" id="nom" name="nom" required>
-
-        <label for="email">Email :</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="niveau">Niveau d'Études :</label>
-        <input type="text" id="niveau" name="niveau" required>
-
-        <button type="submit" class="button">S'inscrire</button>
-    </form>
-</section>
-
-<footer>
-    <p>© 2024 Forsaty - Tous droits réservés</p>
-</footer>
-
-</body>
-</html>
