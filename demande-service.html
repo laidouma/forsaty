@@ -3,44 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Envoyer une Demande - Forsaty</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Demande de Service - Forsaty</title>
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers votre fichier CSS -->
 </head>
 <body>
 
-<header>
-    <div class="header-container">
-        <div class="logo-container">
-            <img src="https://forsatyfr.wordpress.com/wp-content/uploads/2024/11/forsaty__2_-removebg-preview-1.png" alt="Logo Forsaty" class="logo">
-        </div>
-        <div class="header-buttons">
-            <a href="index.html" class="button">Retour à l'accueil</a>
-        </div>
-    </div>
-</header>
-
-<section>
+<section class="service-request-section">
     <h2>Envoyer une Demande de Service</h2>
-    <p>Veuillez remplir ce formulaire pour soumettre une demande de service. Nous vous répondrons dans les plus brefs délais.</p>
+    <p>Utilisez ce formulaire pour soumettre votre demande de service. Nous vous répondrons dès que possible avec des informations personnalisées.</p>
 
-    <!-- Formulaire -->
-    <form action="send-email.php" method="POST">
-        <label for="nom">Nom :</label>
-        <input type="text" id="nom" name="nom" required>
+    <div class="service-request-form">
+        <form action="votre-script-d'envoi.php" method="POST">
+            
+            <!-- Informations de Contact -->
+            <fieldset>
+                <legend>Informations de Contact</legend>
 
-        <label for="email">Email :</label>
-        <input type="email" id="email" name="email" required>
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
 
-        <label for="demande">Description de la demande :</label>
-        <textarea id="demande" name="demande" rows="4" required></textarea>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
 
-        <button type="submit" class="button">Envoyer la demande</button>
-    </form>
+                <label for="tel">Téléphone :</label>
+                <input type="tel" id="tel" name="tel">
+            </fieldset>
+
+            <!-- Détails du Service -->
+            <fieldset>
+                <legend>Détails du Service</legend>
+
+                <label for="service-type">Type de Service :</label>
+                <select id="service-type" name="service_type" required>
+                    <option value="rédaction">Rédaction de Mémoires</option>
+                    <option value="correction">Correction Linguistique</option>
+                    <option value="cours">Cours Particuliers</option>
+                    <option value="numérique">Services Numériques</option>
+                    <option value="formation">Formations Professionnelles</option>
+                    <option value="orientation">Consultations en Orientation</option>
+                </select>
+
+                <label for="description">Description de la Demande :</label>
+                <textarea id="description" name="description" rows="5" required></textarea>
+
+                <label for="budget">Budget Estimé :</label>
+                <input type="text" id="budget" name="budget">
+            </fieldset>
+
+            <button type="submit">Envoyer la Demande</button>
+        </form>
+    </div>
 </section>
-
-<footer style="background-color: #4B0F27; color: white; text-align: center; padding: 15px;">
-    <p>© 2024 Forsaty - Tous droits réservés</p>
-</footer>
 
 </body>
 </html>
