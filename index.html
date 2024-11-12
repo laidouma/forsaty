@@ -21,7 +21,10 @@
                     inscription: "Inscription dans l’Espace Sahwa",
                     demandeEmploi: "Demande d'Emploi",
                     demandeService: "Demande de Service",
-                    footer: "© 2024 Forsaty - Tous droits réservés"
+                    footer: "© 2024 Forsaty - Tous droits réservés",
+                    introText: "Forsaty est plus qu'une simple plateforme. C'est un véritable tremplin pour les étudiants et les jeunes professionnels en Algérie.",
+                    espaceSahwa: "Espace Sahwa est conçu pour répondre aux attentes de chercheurs, étudiants et professionnels.",
+                    objectif: "Notre mission est simple : permettre aux étudiants de surmonter les défis financiers tout en poursuivant leur éducation."
                 },
                 ar: {
                     accueil: "الصفحة الرئيسية",
@@ -31,7 +34,10 @@
                     inscription: "التسجيل في مساحة صحوة",
                     demandeEmploi: "طلب وظيفة",
                     demandeService: "طلب خدمة",
-                    footer: "© 2024 فُصاتي - جميع الحقوق محفوظة"
+                    footer: "© 2024 فُصاتي - جميع الحقوق محفوظة",
+                    introText: "فرصتك في العلم والعمل سيرا نحو النجاح. يوفر موقع فرصتي فرصا امام الطلبة المهتمين من مختلف الاماكن في الجزائر لتحصيل مدخول جيد يساعد على سد متطلبات الدراسة دون التخلي عنها.",
+                    espaceSahwa: "فضاء صحوة يفتح فسحة للقراءة في كتب التراث ويقدم افكارا جديدة وموضوعات متنوعة تمكن الباحث من تقديم الجديد.",
+                    objectif: "مهمتنا بسيطة: تمكين الطلاب من التغلب على التحديات المالية أثناء مواصلة تعليمهم."
                 }
             };
 
@@ -44,6 +50,9 @@
             document.getElementById("demande-emploi-title").innerText = translations[lang].demandeEmploi;
             document.getElementById("demande-service-title").innerText = translations[lang].demandeService;
             document.getElementById("footer").innerText = translations[lang].footer;
+            document.getElementById("intro-text").innerText = translations[lang].introText;
+            document.getElementById("espace-sahwa-text").innerText = translations[lang].espaceSahwa;
+            document.getElementById("objectif-text").innerText = translations[lang].objectif;
         }
     </script>
 </head>
@@ -56,7 +65,12 @@
         </div>
 
         <div class="header-buttons">
-            <!-- Bouton pour changer de langue -->
+            <!-- Boutons de navigation -->
+            <button id="accueil" class="button" onclick="window.location.href='#'">Accueil</button>
+            <button id="qui-sommes-nous" class="button" onclick="window.location.href='#'">Qui sommes-nous ?</button>
+            <button id="contact" class="button" onclick="window.location.href='#'">Contact</button>
+            
+            <!-- Boutons pour changer de langue -->
             <button onclick="changeLanguage('fr')" class="button">Français</button>
             <button onclick="changeLanguage('ar')" class="button">العربية</button>
         </div>
@@ -65,13 +79,13 @@
 
 <section>
     <h2 id="accueil">À propos de Forsaty</h2>
-    <p>
-        **Forsaty** est plus qu'une simple plateforme. C'est un véritable tremplin pour les étudiants et les jeunes professionnels en Algérie. Nous offrons un espace unique où l'apprentissage rencontre les opportunités professionnelles. Grâce à Forsaty, vous pouvez non seulement acquérir des connaissances de qualité, mais aussi développer des compétences pratiques qui vous prépareront à réussir dans la vie active.
+    <p id="intro-text">
+        Forsaty est plus qu'une simple plateforme. C'est un véritable tremplin pour les étudiants et les jeunes professionnels en Algérie. Nous offrons un espace unique où l'apprentissage rencontre les opportunités professionnelles. Grâce à Forsaty, vous pouvez non seulement acquérir des connaissances de qualité, mais aussi développer des compétences pratiques qui vous prépareront à réussir dans la vie active.
     </p>
-    <p>
+    <p id="espace-sahwa-text">
         Notre mission est simple : permettre aux étudiants de surmonter les défis financiers tout en poursuivant leur éducation. Nous croyons en un avenir où les étudiants peuvent équilibrer leurs études et leur indépendance financière grâce à des services diversifiés adaptés à leurs besoins.
     </p>
-    <p>
+    <p id="objectif-text">
         En plus de cela, **Forsaty** offre un accès privilégié à l'Espace Sahwa, une bibliothèque virtuelle enrichie de contenus académiques, de livres de référence, et de ressources pédagogiques actualisées. L'Espace Sahwa est conçu pour répondre aux attentes de chercheurs, étudiants et professionnels à la recherche de nouvelles idées et de découvertes.
     </p>
 </section>
