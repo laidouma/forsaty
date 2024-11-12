@@ -1,0 +1,20 @@
+{
+  "header": {
+    "accueil": "Accueil",
+    "qui_sommes_nous": "Qui sommes-nous ?",
+    "contact": "Contact"
+  },
+  "sections": {
+    "about": {
+      "title": "À propos de Forsaty",
+      "content": "Forsaty est plus qu'une simple plateforme. C'est un véritable tremplin pour les étudiants et les jeunes professionnels en Algérie..."
+    },
+    "services": {
+      "title": "Nos Services",
+      "service1": "Rédaction de Mémoires",
+      "service2": "Correction Linguistique",
+      "service3": "Cours Particuliers"
+    },
+    "footer": "© 2024 Forsaty - Tous droits réservés"
+  }
+}
