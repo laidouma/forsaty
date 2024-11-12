@@ -13,7 +13,7 @@
         <!-- Logo avec lien vers la page d'accueil -->
         <div class="logo-container">
             <a href="index.html">
-                <img src="logo.png" alt="Logo Forsaty" class="logo">
+                <img src="https://forsatyfr.wordpress.com/wp-content/uploads/2024/11/forsaty__2_-removebg-preview-1.png" alt="Logo Forsaty" class="logo">
             </a>
         </div>
         <!-- Boutons de navigation -->
@@ -27,5 +27,25 @@
 <section class="inscription-section">
     <h2>Inscription à l'Espace Sahwa</h2>
     <p>Rejoignez notre bibliothèque virtuelle pour accéder à des ressources académiques de qualité.</p>
+    
+    <!-- Formulaire d'inscription -->
     <form action="mailto:votre-email@domaine.com" method="post" enctype="text/plain">
         <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="niveau">Niveau d'Études :</label>
+        <input type="text" id="niveau" name="niveau" required>
+
+        <button type="submit" class="button">S'inscrire</button>
+    </form>
+</section>
+
+<footer style="background-color: #4B0F27; color: white; text-align: center; padding: 15px;">
+    <p>© 2024 Forsaty - Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
