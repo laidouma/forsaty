@@ -1,8 +1,6 @@
 {
   "header": {
-    "accueil": "Accueil",
-    "qui_sommes_nous": "Qui sommes-nous ?",
-    "contact": "Contact"
+    "accueil": "Forsaty - Votre Opportunité d'Apprendre et de Réussir"
   },
   "sections": {
     "about": {
@@ -13,8 +11,22 @@
       "title": "Nos Services",
       "service1": "Rédaction de Mémoires",
       "service2": "Correction Linguistique",
-      "service3": "Cours Particuliers"
+      "service3": "Cours Particuliers",
+      "service4": "Services en Ligne",
+      "service5": "Formations Professionnelles",
+      "service6": "Consultations en Orientation"
     },
-    "footer": "© 2024 Forsaty - Tous droits réservés"
-  }
-}
+    "inscription": {
+      "title": "Inscription dans l’Espace Sahwa",
+      "content": "Rejoignez notre espace interactif, un lieu riche en informations et ressources dédiées à l'apprentissage et au développement personnel...",
+      "button": "S'inscrire maintenant"
+    },
+    "demande_emploi": {
+      "title": "Demande d'Emploi",
+      "content": "Accédez à un large éventail d'offres d'emploi dans divers secteurs. Que vous soyez à la recherche d'un emploi à temps partiel ou à plein temps...",
+      "button": "Envoyer une demande"
+    },
+    "demande_service": {
+      "title": "Demande de Service",
+      "content": "De la rédaction à la formation en ligne, en passant par des services numériques, nous vous offrons une gamme complète de services professionnels...",
+      "button": "
