@@ -24,19 +24,25 @@ header {
 
 /* Logo et Conteneur du Logo */
 .logo {
-    max-width: 100px; /* Ajustez cette taille selon vos besoins */
+    max-width: 150px; /* Ajuster la taille du logo */
     height: auto;
 }
 
 .logo-container {
-    width: 130px;
-    height: 130px;
+    width: 150px;  /* Ajuster la taille du conteneur du logo */
+    height: 150px; /* Ajuster la taille du conteneur du logo */
     background-color: white;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Effet au survol du logo */
+.logo-container:hover {
+    transform: scale(1.05);  /* Zoom légèrement sur le logo */
+    transition: transform 0.3s ease;
 }
 
 /* Boutons du Header */
