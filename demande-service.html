@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demande de Service - Forsaty</title>
-    <link rel="stylesheet" href="style.css"> <!-- Lien vers votre fichier CSS -->
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers le fichier CSS -->
 </head>
 <body>
+
+<header>
+    <div class="header-container">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo Forsaty" class="logo"> <!-- Logo localisé ici -->
+        </div>
+        <div class="header-buttons">
+            <a href="index.html" class="button">Accueil</a>
+            <a href="contact.html" class="button">Contact</a>
+        </div>
+    </div>
+</header>
 
 <section class="service-request-section">
     <h2>Envoyer une Demande de Service</h2>
@@ -50,10 +62,14 @@
                 <input type="text" id="budget" name="budget">
             </fieldset>
 
-            <button type="submit">Envoyer la Demande</button>
+            <button type="submit" class="button">Envoyer la Demande</button>
         </form>
     </div>
 </section>
+
+<footer>
+    <p>© 2024 Forsaty - Tous droits réservés</p>
+</footer>
 
 </body>
 </html>
