@@ -75,16 +75,17 @@ h2 {
 	margin-top: 30px;
 }
 
-.service img {
-	width: 100%;
-	height: auto;
-	border-radius: 8px;
-}
-
 .service {
 	background-color: white;
 	padding: 20px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	text-align: center;
+}
+
+.service img {
+	width: 100%;
+	height: auto;
 	border-radius: 8px;
 }
 
@@ -129,4 +130,110 @@ h2 {
 	.section-box {
 		width: 100%;
 	}
+}
+
+/* Style général des sections de contact et demande de service */
+.contact-section, .service-request-section {
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 0 15px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Titres de section */
+.contact-section h2, .service-request-section h2 {
+    color: #4B0F27;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Informations de contact */
+.contact-info {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+/* Style du formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Bouton d'envoi */
+form button,
+form .button {
+    background-color: #4B0F27;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+form button:hover,
+form .button:hover {
+    background-color: #8B1C43;
+}
+
+/* Fieldset et legend pour organiser les formulaires */
+fieldset {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #4B0F27;
+    padding: 0 10px;
+}
+
+/* Footer */
+footer {
+	background-color: #4B0F27;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin-top: 20px;
+}
+
+footer p {
+	margin: 0;
+	font-size: 14px;
 }
