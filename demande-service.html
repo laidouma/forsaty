@@ -110,6 +110,11 @@
             padding: 20px;
             margin-top: 60px;
         }
+
+        /* Style pour assurer que les numéros sont dans l'ordre de lecture français */
+        .ltr-numbers {
+            direction: ltr; /* Forcer les numéros à être affichés de gauche à droite */
+        }
     </style>
 </head>
 <body>
@@ -125,6 +130,8 @@
             <a href="index.html" class="button">Accueil</a>
             <a href="contact.html" class="button">Contact</a>
             <a href="qui-sommes-nous.html" class="button">Qui sommes-nous ?</a>
+            <!-- Bouton pour changer la langue -->
+            <a href="demande-de-service2.html" class="button">عربي</a> <!-- Lien vers la version arabe de cette page -->
         </div>
     </div>
 </header>
@@ -145,7 +152,7 @@
     <div class="info-box">
         <h3>📞 Par Téléphone</h3>
         <p>Vous préférez échanger directement ? Appelez-nous ou envoyez-nous un message.</p>
-        <p><strong>Téléphone :</strong> <a href="tel:+213666370876">06 66 37 08 76</a></p>
+        <p><strong>Téléphone :</strong> <a href="tel:+213666370876" class="ltr-numbers">06 66 37 08 76</a></p> <!-- Mise à jour pour avoir les numéros en LTR -->
     </div>
 </section>
 
