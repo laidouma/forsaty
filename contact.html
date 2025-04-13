@@ -62,19 +62,24 @@
             background-color: #fdf8f9;
             border-radius: 16px;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+            text-align: center;
         }
 
         .contact-section h2 {
-            text-align: center;
             font-size: 2.5rem;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
             color: #4B0F27;
+        }
+
+        .contact-section .subheading {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 30px;
         }
 
         .contact-info {
             font-size: 1.15rem;
             line-height: 2;
-            text-align: center;
         }
 
         .contact-info p {
@@ -98,6 +103,16 @@
             padding: 20px;
             margin-top: 60px;
         }
+
+        @media (max-width: 600px) {
+            .header-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .header-buttons {
+                margin-top: 10px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -119,6 +134,7 @@
 
 <section class="contact-section">
     <h2>Contactez-nous</h2>
+    <p class="subheading">Une question ? Un projet ? Écrivez-nous, on vous répond avec plaisir !</p>
     <div class="contact-info">
         <p><strong>Email :</strong> <a href="mailto:groupforsaty@gmail.com">groupforsaty@gmail.com</a></p>
         <p><strong>Téléphone :</strong> <a href="tel:+213666370876">06 66 37 08 76</a></p>
