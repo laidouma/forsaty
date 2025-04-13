@@ -111,6 +111,11 @@
             padding: 20px;
             margin-top: 60px;
         }
+
+        /* Style pour assurer que les numéros sont dans l'ordre de lecture arabe */
+        .rtl-numbers {
+            direction: ltr; /* Forcer les numéros à être affichés de gauche à droite */
+        }
     </style>
 </head>
 <body>
@@ -127,7 +132,7 @@
             <a href="contact2.html" class="button">اتصل بنا</a> <!-- Lien mis à jour vers la version arabe de Contact -->
             <a href="qui-sommes-nous2.html" class="button">من نحن؟</a> <!-- Lien mis à jour vers la version arabe de Qui sommes-nous -->
             <!-- Bouton pour changer la langue -->
-            <a href="demande-emploi.html" class="button">Français</a> <!-- Lien vers la version française de cette page -->
+            <a href="qui-sommes-nous.html" class="button">Français</a> <!-- Lien vers la version française de cette page -->
         </div>
     </div>
 </header>
@@ -149,7 +154,7 @@
     <div class="info-box">
         <h3>📞 بحاجة إلى مزيد من المعلومات؟</h3>
         <p>اتصل بنا إذا كان لديك أي أسئلة حول الوظائف المتاحة أو عملية التوظيف.</p>
-        <p><strong>الهاتف:</strong> <a href="tel:+213666370876">06 66 37 08 76</a></p>
+        <p><strong>الهاتف:</strong> <a href="tel:+213666370876" class="rtl-numbers">06 66 37 08 76</a></p> <!-- Mise à jour pour avoir les numéros en LTR -->
     </div>
 </section>
 
