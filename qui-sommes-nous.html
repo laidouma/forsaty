@@ -5,21 +5,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qui sommes-nous ? - Forsaty</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
+
+        header {
+            background-color: #4B0F27;
+            padding: 15px 0;
+            color: white;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .header-buttons .button {
+            color: white;
+            margin-left: 15px;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            transition: background 0.3s ease;
+        }
+
+        .header-buttons .button:hover,
+        .header-buttons .active {
+            background-color: #7A1F3D;
+        }
+
+        .about-section {
+            max-width: 700px;
+            margin: 60px auto;
+            padding: 40px;
+            background-color: #fdf8f9;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+            text-align: center;
+        }
+
+        .about-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #4B0F27;
+        }
+
+        .about-section h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #4B0F27;
+        }
+
+        .about-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #666;
+        }
+
+        .about-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .about-section ul li {
+            font-size: 1.1rem;
+            margin: 10px 0;
+            color: #666;
+        }
+
+        footer {
+            background-color: #4B0F27;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 600px) {
+            .header-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .header-buttons {
+                margin-top: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
 
 <header>
     <div class="header-container">
-        <!-- Logo avec lien vers la page d'accueil -->
         <div class="logo-container">
             <a href="index.html">
-                <img src="logo.png" alt="Logo Forsaty" class="logo">
+                <img src="logo.png" alt="Logo Forsaty" class="logo" />
             </a>
         </div>
         <div class="header-buttons">
             <a href="index.html" class="button">Accueil</a>
             <a href="contact.html" class="button">Contact</a>
             <a href="qui-sommes-nous.html" class="button active">Qui sommes-nous ?</a>
+            <a href="qui-sommes-nous2.html" class="button">العربية</a> <!-- Lien vers la version arabe -->
         </div>
     </div>
 </header>
@@ -39,7 +146,7 @@
     </ul>
 </section>
 
-<footer style="background-color: #4B0F27; color: white; text-align: center; padding: 15px;">
+<footer>
     <p>© 2024 Forsaty - Tous droits réservés</p>
 </footer>
 
