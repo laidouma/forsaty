@@ -4,75 +4,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demande de Service - Forsaty</title>
-    <link rel="stylesheet" href="style.css"> <!-- Lien vers votre fichier CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
+
+        header {
+            background-color: #4B0F27;
+            padding: 15px 0;
+            color: white;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .header-buttons .button {
+            color: white;
+            margin-left: 15px;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            transition: background 0.3s ease;
+        }
+
+        .header-buttons .button:hover {
+            background-color: #7A1F3D;
+        }
+
+        .service-request-section {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 40px;
+            background-color: #fdf8f9;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+        }
+
+        .service-request-section h2 {
+            text-align: center;
+            font-size: 2.3rem;
+            color: #4B0F27;
+            margin-bottom: 20px;
+        }
+
+        .service-request-section p {
+            font-size: 1.2rem;
+            text-align: center;
+            line-height: 1.7;
+        }
+
+        .info-box {
+            background-color: #fff;
+            border: 1px solid #eee;
+            padding: 25px;
+            margin-top: 30px;
+            border-radius: 12px;
+        }
+
+        .info-box h3 {
+            color: #4B0F27;
+            margin-bottom: 10px;
+        }
+
+        .info-box p {
+            font-size: 1.1rem;
+        }
+
+        .info-box a {
+            color: #4B0F27;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .info-box a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #4B0F27;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+        }
+    </style>
 </head>
 <body>
 
 <header>
     <div class="header-container">
-        <!-- Logo avec lien vers la page d'accueil -->
         <div class="logo-container">
             <a href="index.html">
                 <img src="logo.png" alt="Logo Forsaty" class="logo">
             </a>
         </div>
-        <!-- Boutons de navigation -->
         <div class="header-buttons">
             <a href="index.html" class="button">Accueil</a>
             <a href="contact.html" class="button">Contact</a>
-            <a href="qui-sommes-nous.html" class="button">Qui sommes-nous ?</a> <!-- Lien ajouté vers "Qui sommes-nous ?" -->
+            <a href="qui-sommes-nous.html" class="button">Qui sommes-nous ?</a>
         </div>
     </div>
 </header>
 
 <section class="service-request-section">
-    <h2>Envoyer une Demande de Service</h2>
-    <p>Utilisez ce formulaire pour soumettre votre demande de service. Nous vous répondrons dès que possible avec des informations personnalisées.</p>
+    <h2>Demande de Service</h2>
+    <p>Vous souhaitez bénéficier de l’un de nos services ? Rien de plus simple ! Contactez-nous directement avec les détails de votre besoin.</p>
 
-    <div class="service-request-form">
-        <form action="votre-script-d'envoi.php" method="POST">
-            
-            <!-- Informations de Contact -->
-            <fieldset>
-                <legend>Informations de Contact</legend>
+    <div class="info-box">
+        <h3>📧 Par Email</h3>
+        <p>Envoyez-nous votre demande avec les informations suivantes :<br>
+        • Type de service souhaité<br>
+        • Une brève description<br>
+        • Vos coordonnées</p>
+        <p><strong>Email :</strong> <a href="mailto:groupforsaty@gmail.com">groupforsaty@gmail.com</a></p>
+    </div>
 
-                <label for="nom">Nom :</label>
-                <input type="text" id="nom" name="nom" required>
-
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="tel">Téléphone :</label>
-                <input type="tel" id="tel" name="tel">
-            </fieldset>
-
-            <!-- Détails du Service -->
-            <fieldset>
-                <legend>Détails du Service</legend>
-
-                <label for="service-type">Type de Service :</label>
-                <select id="service-type" name="service_type" required>
-                    <option value="rédaction">Rédaction de Mémoires</option>
-                    <option value="correction">Correction Linguistique</option>
-                    <option value="cours">Cours Particuliers</option>
-                    <option value="numérique">Services Numériques</option>
-                    <option value="formation">Formations Professionnelles</option>
-                    <option value="orientation">Consultations en Orientation</option>
-                </select>
-
-                <label for="description">Description de la Demande :</label>
-                <textarea id="description" name="description" rows="5" required></textarea>
-
-                <label for="budget">Budget Estimé :</label>
-                <input type="text" id="budget" name="budget">
-            </fieldset>
-
-            <button type="submit">Envoyer la Demande</button>
-        </form>
+    <div class="info-box">
+        <h3>📞 Par Téléphone</h3>
+        <p>Vous préférez échanger directement ? Appelez-nous ou envoyez-nous un message.</p>
+        <p><strong>Téléphone :</strong> <a href="tel:+213666370876">06 66 37 08 76</a></p>
     </div>
 </section>
 
-<footer style="background-color: #4B0F27; color: white; text-align: center; padding: 15px;">
+<footer>
     <p>© 2024 Forsaty - Tous droits réservés</p>
 </footer>
 
