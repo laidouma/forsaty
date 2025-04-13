@@ -5,6 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forsaty - Votre Opportunité d'Apprendre et de Réussir</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .image-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin: 40px 0;
+        }
+
+        .image-links a {
+            display: block;
+            width: 300px;
+            transition: transform 0.3s ease;
+        }
+
+        .image-links a:hover {
+            transform: scale(1.05);
+        }
+
+        .image-links img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+    </style>
 </head>
 <body>
 
@@ -24,50 +50,16 @@
 </header>
 
 <section>
-    <h2>À propos de Forsaty</h2>
-    <p>
-        <strong>Forsaty</strong> est plus qu'une simple plateforme. C'est un véritable tremplin pour les étudiants et les jeunes professionnels en Algérie. Nous offrons un espace unique où l'apprentissage rencontre les opportunités professionnelles.
-    </p>
-    <p>
-        Notre mission est simple : permettre aux étudiants de surmonter les défis financiers tout en poursuivant leur éducation.
-    </p>
-    <p>
-        En plus de cela, <strong>Forsaty</strong> offre un accès privilégié à l'Espace Sahwa, une bibliothèque virtuelle enrichie de contenus académiques et de ressources pédagogiques actualisées.
-    </p>
-</section>
-
-<section>
-    <h2>Nos Services</h2>
-    <div class="services">
-        <a href="redaction.html" class="service">
-            <img src="service1.jpg" alt="Rédaction de Mémoires">
-            <h3>Rédaction de Mémoires</h3>
-            <p>Assistance dans la rédaction de mémoires académiques avec rigueur et qualité.</p>
+    <h2>Nos Espaces</h2>
+    <div class="image-links">
+        <a href="inscription.html">
+            <img src="inscription.jpg" alt="Inscription à l’Espace Sahwa">
         </a>
-        <a href="correction.html" class="service">
-            <img src="service2.jpg" alt="Correction Linguistique">
-            <h3>Correction Linguistique</h3>
-            <p>Experts linguistiques pour des écrits impeccables.</p>
+        <a href="demande-emploi.html">
+            <img src="emploi.jpg" alt="Demande d'emploi">
         </a>
-        <a href="cours.html" class="service">
-            <img src="service3.jpg" alt="Cours Particuliers">
-            <h3>Cours Particuliers</h3>
-            <p>Cours personnalisés avec des enseignants qualifiés.</p>
-        </a>
-        <a href="services-en-ligne.html" class="service">
-            <img src="service4.jpg" alt="Services en Ligne">
-            <h3>Services en Ligne</h3>
-            <p>Création de sites web, gestion de projets numériques, etc.</p>
-        </a>
-        <a href="formations.html" class="service">
-            <img src="service5.jpg" alt="Formations Professionnelles">
-            <h3>Formations Professionnelles</h3>
-            <p>Formations concrètes dans des secteurs porteurs.</p>
-        </a>
-        <a href="orientation.html" class="service">
-            <img src="service6.jpg" alt="Consultations en Orientation">
-            <h3>Consultations en Orientation</h3>
-            <p>Accompagnement dans vos choix d'études et de carrière.</p>
+        <a href="demande-service.html">
+            <img src="service.jpg" alt="Demande de service">
         </a>
     </div>
 </section>
