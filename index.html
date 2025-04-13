@@ -1,102 +1,23 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Contact - Forsaty</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forsaty - Votre Opportunité d'Apprendre et de Réussir</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fff;
-            color: #333;
-        }
-
-        header {
-            background-color: #4B0F27;
-            padding: 15px 0;
-            color: white;
-        }
-
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        .about {
             max-width: 1000px;
-            margin: 0 auto;
+            margin: 40px auto;
             padding: 0 20px;
+            line-height: 1.8;
+            font-size: 1.1rem;
         }
 
-        .logo-container {
-            display: flex;
-            align-items: center;
-        }
-
-        .logo {
-            height: 80px;
-            width: 80px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-        .header-buttons .button {
-            color: white;
-            margin-left: 15px;
-            text-decoration: none;
-            padding: 10px 15px;
-            border-radius: 6px;
-            transition: background 0.3s ease;
-        }
-
-        .header-buttons .button:hover,
-        .header-buttons .active {
-            background-color: #7A1F3D;
-        }
-
-        .contact-section {
-            max-width: 700px;
-            margin: 60px auto;
-            padding: 40px;
-            background-color: #fdf8f9;
-            border-radius: 16px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
-        }
-
-        .contact-section h2 {
+        .about h2 {
             text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-            color: #4B0F27;
-        }
-
-        .contact-info {
-            font-size: 1.15rem;
-            line-height: 2;
-            text-align: center;
-        }
-
-        .contact-info p {
-            margin: 15px 0;
-        }
-
-        .contact-info a {
-            color: #4B0F27;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            background-color: #4B0F27;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 60px;
+            font-size: 2rem;
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -106,26 +27,75 @@
     <div class="header-container">
         <div class="logo-container">
             <a href="index.html">
-                <img src="logo.png" alt="Logo Forsaty" class="logo" />
+                <img src="logo.png" alt="Logo Forsaty" class="logo">
             </a>
         </div>
         <div class="header-buttons">
             <a href="index.html" class="button">Accueil</a>
-            <a href="contact.html" class="button active">Contact</a>
-            <a href="qui-sommes-nous.html" class="button">Qui sommes-nous ?</a>
+            <a href="contact.html" class="button">Contact</a> <!-- Inversion effectuée ici -->
+            <a href="qui-sommes-nous.html" class="button">Qui sommes-nous ?</a> <!-- Inversion effectuée ici -->
         </div>
     </div>
 </header>
 
-<section class="contact-section">
-    <h2>Contactez-nous</h2>
-    <div class="contact-info">
-        <p><strong>Email :</strong> <a href="mailto:groupforsaty@gmail.com">groupforsaty@gmail.com</a></p>
-        <p><strong>Téléphone :</strong> <a href="tel:+213666370876">0666 37 08 76</a></p>
+<!-- À propos de Forsaty -->
+<section class="about">
+    <h2>À propos de Forsaty</h2>
+    <p><strong>Forsaty</strong> est bien plus qu'une plateforme en ligne. C’est un véritable tremplin pour les étudiants et les jeunes professionnels en Algérie. Notre objectif est de créer un espace dynamique où l’apprentissage, le développement personnel et l’accès à des opportunités concrètes se rencontrent.</p>
+
+    <p>Nous accompagnons les jeunes dans leur parcours éducatif et professionnel en leur proposant des services adaptés, accessibles et pensés pour répondre à leurs besoins réels. Grâce à Forsaty, chacun peut acquérir des compétences pratiques, renforcer ses connaissances et avancer vers un avenir plus stable et autonome.</p>
+
+    <p>Notre mission est claire : permettre à chaque étudiant de concilier ses études et son indépendance financière, en s’appuyant sur des solutions fiables et des ressources concrètes, sans compromis sur la qualité.</p>
+</section>
+
+<!-- Section des services -->
+<section>
+    <h2>Nos Services</h2>
+    <div class="services">
+        <div class="service">
+            <img src="service1.jpg" alt="Rédaction de Mémoires">
+            <h3>Rédaction de Mémoires</h3>
+            <p>Nous vous assistons dans la rédaction de mémoires académiques, en veillant à la qualité et à la rigueur nécessaire à vos travaux.</p>
+        </div>
+        <div class="service">
+            <img src="service2.jpg" alt="Correction Linguistique">
+            <h3>Correction Linguistique</h3>
+            <p>Des experts linguistiques pour vous assurer que vos écrits sont parfaits, tant sur le plan grammatical que syntaxique.</p>
+        </div>
+        <div class="service">
+            <img src="service3.jpg" alt="Cours Particuliers">
+            <h3>Cours Particuliers</h3>
+            <p>Nous offrons des cours personnalisés pour vous aider à exceller dans vos études, avec des enseignants qualifiés.</p>
+        </div>
+        <div class="service">
+            <img src="service4.jpg" alt="Service Traiteur">
+            <h3>Service Traiteur</h3>
+            <p>Notre service traiteur propose la confection de gâteaux, pâtisseries, mignardises et autres délices, parfaits pour tous types d’événements, tels que les conférences, réceptions ou fêtes étudiantes.</p>
+        </div>
+        <!-- Autres services (Naturopathie et Bien-être) -->
+        <div class="service">
+            <h3>Autres Services</h3>
+            <p>Nous proposons des services de naturopathie, incluant des conseils en nutrition, des soins naturels.</p>
+        </div>
     </div>
 </section>
 
-<footer>
+<!-- Section Demande d'Emploi et Demande de Service -->
+<section class="three-columns">
+    <div class="section-box">
+        <h2>Demande d'Emploi</h2>
+        <p>Découvrez nos opportunités professionnelles adaptées à votre profil.</p>
+        <a href="demande-emploi.html" class="button">Envoyer une demande</a>
+    </div>
+
+    <div class="section-box">
+        <h2>Demande de Service</h2>
+        <p>Profitez de nos services sur mesure selon vos besoins académiques ou professionnels.</p>
+        <a href="demande-service.html" class="button">Faire une demande</a>
+    </div>
+</section>
+
+<footer style="background-color: #4B0F27; color: white; text-align: center; padding: 15px;">
     <p>© 2024 Forsaty - Tous droits réservés</p>
 </footer>
 
