@@ -6,38 +6,106 @@
     <title>Contact - Forsaty</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
+
+        header {
+            background-color: #4B0F27;
+            padding: 15px 0;
+            color: white;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            height: 50px;
+        }
+
+        .header-buttons .button {
+            color: white;
+            margin-left: 15px;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            transition: background 0.3s ease;
+        }
+
+        .header-buttons .button:hover,
+        .header-buttons .active {
+            background-color: #7A1F3D;
+        }
+
         .contact-section {
             max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            font-size: 1.1rem;
-            line-height: 1.8;
+            margin: 60px auto;
+            padding: 30px;
+            background-color: #fdf8f9;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
 
         .contact-section h2 {
             text-align: center;
-            font-size: 2rem;
-            margin-bottom: 20px;
+            font-size: 2.2rem;
+            margin-bottom: 25px;
+            color: #4B0F27;
         }
 
         .contact-info {
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
         }
 
         .contact-info p {
-            margin: 10px 0;
+            font-size: 1.2rem;
+            margin: 15px 0;
         }
 
         .contact-info a {
             color: #4B0F27;
+            font-weight: bold;
             text-decoration: none;
         }
 
         .contact-info a:hover {
             text-decoration: underline;
+        }
+
+        .contact-icons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .contact-icons a {
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: #4B0F27;
+            transition: transform 0.2s;
+        }
+
+        .contact-icons a:hover {
+            transform: scale(1.2);
+        }
+
+        footer {
+            background-color: #4B0F27;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -64,9 +132,15 @@
         <p><strong>Email :</strong> <a href="mailto:groupforsaty@gmail.com">groupforsaty@gmail.com</a></p>
         <p><strong>Téléphone :</strong> <a href="tel:+213666370876">0666 37 08 76</a></p>
     </div>
+
+    <div class="contact-icons">
+        <a href="mailto:groupforsaty@gmail.com" title="Envoyer un e-mail 📧">📧</a>
+        <a href="tel:+213666370876" title="Appeler 📞">📞</a>
+        <a href="https://wa.me/213666370876" target="_blank" title="Discuter sur WhatsApp 💬">💬</a>
+    </div>
 </section>
 
-<footer style="background-color: #4B0F27; color: white; text-align: center; padding: 15px;">
+<footer>
     <p>© 2024 Forsaty - Tous droits réservés</p>
 </footer>
 
