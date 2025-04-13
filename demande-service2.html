@@ -111,6 +111,11 @@
             padding: 20px;
             margin-top: 60px;
         }
+
+        /* Style pour assurer que les numéros sont dans l'ordre arabe */
+        .rtl-numbers {
+            direction: rtl; /* Forcer les numéros à être affichés de droite à gauche */
+        }
     </style>
 </head>
 <body>
@@ -126,6 +131,8 @@
             <a href="index2.html" class="button">الصفحة الرئيسية</a> <!-- Lien mis à jour vers la version arabe de l'accueil -->
             <a href="contact2.html" class="button">اتصل بنا</a> <!-- Lien mis à jour vers la version arabe de Contact -->
             <a href="qui-sommes-nous2.html" class="button">من نحن؟</a> <!-- Lien mis à jour vers la version arabe de Qui sommes-nous -->
+            <!-- Bouton pour changer la langue -->
+            <a href="demande-de-service.html" class="button">Français</a> <!-- Lien vers la version française de la page -->
         </div>
     </div>
 </header>
@@ -146,7 +153,7 @@
     <div class="info-box">
         <h3>📞 عبر الهاتف</h3>
         <p>هل تفضل التواصل مباشرة؟ اتصل بنا أو أرسل لنا رسالة.</p>
-        <p><strong>الهاتف:</strong> <a href="tel:+213666370876">06 66 37 08 76</a></p>
+        <p><strong>الهاتف:</strong> <a href="tel:+213666370876" class="rtl-numbers">06 66 37 08 76</a></p> <!-- Mise à jour pour avoir les numéros en RTL -->
     </div>
 </section>
 
